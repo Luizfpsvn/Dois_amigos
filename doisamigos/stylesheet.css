@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+.pagina {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.navbar {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  z-index: 10;
+}
+
+.navbar__logo {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  background-color: gray;
+}
+
+.navbar__options {
+  margin-left: auto;
+}
+
+.navbar__option {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.pagina__display,
+.pagina__subdisplay {
+  display: block;
+  font-size: 6rem;
+  margin: auto;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+.pagina__subdisplay {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.button {
+  display: block;
+  background-color: #1279d9;
+  color: #fff;
+  padding: 0.6rem;
+  border: none;
+  font-size: 1.2rem;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.pagina__titulo {
+  display: block;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
+.pagina--cinza {
+  background-color: #ababab;
+}
+
+.perfil {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  padding: 8px;
+  margin: auto;
+}
+
+.perfil--direita {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
+.perfil__foto {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #c4c4c4;
+}
+
+.perfil__nome {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+}
+
+.perfil__mensagem {
+  font-size: 2rem;
+  display: block;
+}
+
+.perfil__dados {
+  display: block;
+  width: calc(100% - 20rem);
+  height: auto;
+  padding: 10px;
+}
+
+.pagina--cinzaclaro {
+  background-color: #dddddd;
+}
+
+.card {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 480px;
+  height: 360px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card:hover {
+  transition: all 0.2s ease;
+  box-shadow: 10px 10px 10px #00000024;
+}
+
+.card__titulo {
+  display: block;
+  width: 100%;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card__mensagem {
+  display: block;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
